@@ -31,7 +31,7 @@ const LandingPage = ({ page }) => {
   return (
     <div id="banner" className="pt-[5rem]">
       <section className="relative min-h-screen flex items-center justify-center bg-black/30">
-        <div className="pt-[8rem] pb-[4rem]">
+        <div className="pt-[4rem] md:pt-[8rem] pb-[4rem]">
           <div
             data-aos="fade-up"
             className="wrapper flex flex-col text-center text-white gap-5 justify-center h-full"
