@@ -26,6 +26,7 @@ import ContactForm2 from "../Components/ContactForm2";
 import { TiArrowBack } from "react-icons/ti";
 import { ImPhone } from "react-icons/im";
 import Portfolio from "../Components/LandingPage/Portfolio";
+import { Link as Scroll } from "react-scroll";
 
 const LandingPage = ({ page }) => {
   const isWeb = page === "web";
@@ -47,9 +48,15 @@ const LandingPage = ({ page }) => {
               <Link to="/about-us" className="primary-btn">
                 Learn More
               </Link>
-              <Link to="/contact-us" className="transparent-btn">
+              <Scroll
+                smooth
+                spy
+                offset={-80}
+                to="contact"
+                className="transparent-btn"
+              >
                 Contact Us
-              </Link>
+              </Scroll>
             </div>
           </div>
         </div>
@@ -190,7 +197,7 @@ const LandingPage = ({ page }) => {
         <div className="wrapper grid md:grid-cols-2 gap-7">
           <div data-aos="fade-up" className="space-y-4">
             <p className="uppercase text-primary text-center md:text-start">
-              About us
+              {isWeb ? "Web Development" : "App Development"}
             </p>
             <div className="md:hidden flex flex-col pb-3">
               <img
@@ -224,9 +231,6 @@ const LandingPage = ({ page }) => {
               ))}
             </div>
             <div className="flex flex-col-reverse sm:flex-row items-center gap-5 sm:gap-10 pt-5">
-              <Link to="/about-us" className="primary-btn sm:w-fit w-full">
-                Know More
-              </Link>
               <div className="flex gap-3 sm:justify-center sm:w-fit w-full">
                 <div className="bg-primary h-full aspect-square flex justify-center items-center p-3">
                   <BiSupport size={25} className="text-white" />

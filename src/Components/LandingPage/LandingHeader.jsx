@@ -90,7 +90,7 @@ const LandingHeader = () => {
               spy
               offset={-100}
               to="contact"
-              className="primary-btn cursor-pointer"
+              className="primary-btn"
             >
               Contact Us
             </Scroll>
