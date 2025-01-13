@@ -35,7 +35,7 @@ const PortfolioList = () => {
     <div className="wrapper py-16">
       <div className="wrapper">
         <div className="flex flex-col items-center gap-5">
-          <div data-aos="fade-right" className="space-y-4 flex flex-col items-center text-center">
+          <div data-aos="fade-up" className="space-y-4 flex flex-col items-center text-center">
             <p className="uppercase text-primary text-center md:text-start">
               Portfolio
             </p>

@@ -139,7 +139,7 @@ const Home = () => {
 
       <section className="pt-[5rem]">
         <div className="wrapper grid md:grid-cols-2 gap-7">
-          <div data-aos="fade-right" className="space-y-4">
+          <div data-aos="fade-up" className="space-y-4">
             <p className="uppercase text-primary text-center md:text-start">
               About us
             </p>
@@ -194,7 +194,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div data-aos="fade-left" className="hidden md:flex flex-col">
+          <div data-aos="fade-up" className="hidden md:flex flex-col">
             <img
               src={aboutImg}
               alt="About Us"
@@ -215,7 +215,7 @@ const Home = () => {
           <HrLine />
         </div>
         <div className="mt-[2rem] grid sm:grid-cols-2 md:grid-cols-3 gap-7">
-          <div data-aos="fade-right" className="flex flex-col gap-7">
+          <div data-aos="fade-up" className="flex flex-col gap-7">
             <div className="space-y-3">
               <div className="bg-primary w-[3.5rem] aspect-square flex justify-center items-center p-3">
                 <FaRegThumbsUp size={30} className="text-white" />
@@ -253,7 +253,7 @@ const Home = () => {
               className="md:aspect-[2/3] w-full h-full object-cover object-bottom"
             />
           </div>
-          <div data-aos="fade-left" className="flex flex-col gap-7">
+          <div data-aos="fade-up" className="flex flex-col gap-7">
             <div className="space-y-3">
               <div className="bg-primary w-[3.5rem] aspect-square flex justify-center items-center p-3">
                 <FaPeopleGroup size={30} className="text-white" />

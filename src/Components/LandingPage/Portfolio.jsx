@@ -12,7 +12,7 @@ const Portfolio = ({ page }) => {
       <div className="wrapper">
         <div className="flex flex-col items-center gap-5">
           <div
-            data-aos="fade-right"
+            data-aos="fade-up"
             className="space-y-4 flex flex-col items-center text-center"
           >
             <p className="uppercase text-primary text-center md:text-start">
