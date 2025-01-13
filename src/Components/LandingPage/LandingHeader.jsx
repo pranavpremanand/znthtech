@@ -11,7 +11,7 @@ import { ImPhone } from "react-icons/im";
 import { Link as Scroll } from "react-scroll";
 
 export const websiteLinks = [
-  { id: 1, name: "Home", path: "banner" },
+  { id: 1, name: "Home", path: "/" },
   { id: 2, name: "About Us", path: "about" },
   { id: 3, name: "Services", path: "services" },
 ];
@@ -66,19 +66,25 @@ const LandingHeader = () => {
             />
           </Scroll>
           <div className="hidden md:flex items-center gap-7">
-            {websiteLinks.map((link) => (
-              <Scroll
-                smooth
-                spy
-                offset={-90}
-                key={link.id}
-                to={link.path}
-                className="link"
-                // activeClass="font-bold text-primary"
-              >
-                {link.name}
-              </Scroll>
-            ))}
+            {websiteLinks.map((link) =>
+              link.path.includes("/") ? (
+                <Link key={link.id} to={link.path} className="link">
+                  {link.name}
+                </Link>
+              ) : (
+                <Scroll
+                  smooth
+                  spy
+                  offset={-90}
+                  key={link.id}
+                  to={link.path}
+                  className="link"
+                  // activeClass="font-bold text-primary"
+                >
+                  {link.name}
+                </Scroll>
+              )
+            )}
             <Scroll
               smooth
               spy
@@ -122,19 +128,29 @@ const LandingHeader = () => {
           </button>
         </div>
         <div className="py-4 px-7 flex flex-col gap-4 text-black">
-          {websiteLinks.map((link) => (
-            <Scroll
-              smooth
-              spy
-              offset={-20}
-              onClick={() => setIsOpen(false)}
-              key={link.name}
-              to={link.path}
-              className="text-2xl font-medium"
-            >
-              {link.name}
-            </Scroll>
-          ))}
+          {websiteLinks.map((link) =>
+            link.path.includes("/") ? (
+              <Link
+                key={link.id}
+                to={link.path}
+                className="text-2xl font-medium"
+              >
+                {link.name}
+              </Link>
+            ) : (
+              <Scroll
+                smooth
+                spy
+                offset={-20}
+                onClick={() => setIsOpen(false)}
+                key={link.name}
+                to={link.path}
+                className="text-2xl font-medium"
+              >
+                {link.name}
+              </Scroll>
+            )
+          )}
           <Scroll
             smooth
             spy
