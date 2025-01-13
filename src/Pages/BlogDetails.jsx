@@ -52,7 +52,7 @@ const BlogDetails = () => {
             <h3 className="section-heading">Recent Blogs</h3>
             <HrLine />
           </div>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
             {blogs.map((item) => (
               <BlogItem key={item} item={item} />
             ))}
