@@ -17,7 +17,7 @@ import { BiSupport } from "react-icons/bi";
 import { FaPeopleGroup } from "react-icons/fa6";
 import Testimonials from "../Components/Testimonials";
 import BlogsSection from "../Components/Website/BlogsSection";
-import PortfolioList from "../Components/PortfolioList";
+import PortfolioList from "../Components/Website/PortfolioList";
 
 const Home = () => {
   return (

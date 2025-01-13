@@ -8,7 +8,7 @@ const Portfolio = ({ page }) => {
   const isWeb = page === "web";
   let data = isWeb ? portfolio.webDevelopment : portfolio.appDevelopment;
   return (
-    <div id="portfolio" className="py-[5rem]">
+    <div id="portfolio" className="pt-[5rem]">
       <div className="wrapper">
         <div className="flex flex-col items-center gap-5">
           <div
