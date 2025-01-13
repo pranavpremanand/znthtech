@@ -2,6 +2,8 @@ import React from "react";
 import Header from "./Components/Website/Header";
 import Footer from "./Components/Website/Footer";
 import { Outlet } from "react-router-dom";
+import LandingHeader from "./Components/LandingPage/LandingHeader";
+import LandingFooter from "./Components/LandingPage/LandingFooter";
 
 export const MainLayout = () => {
   return (
@@ -18,11 +20,11 @@ export const MainLayout = () => {
 export const LandingPageLayout = () => {
   return (
     <>
-      <Header />
+      <LandingHeader />
       <main>
         <Outlet />
       </main>
-      <Footer />
+      <LandingFooter />
     </>
   );
 };

@@ -7,7 +7,7 @@ import { companyDetails } from "../data/constant";
 
 const ContactForm = () => {
   return (
-    <div className="wrapper pt-[5rem]">
+    <div id="contact" className="wrapper pt-[5rem]">
       <div className="grid md:grid-cols-[55%_auto] gap-7">
         <div data-aos="fade-right">
           <div className="space-y-4 text-start">

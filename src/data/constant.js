@@ -38,28 +38,28 @@ export const testimonials = [
     designation: "CEO, Tech Innovators",
     image: require("../assets/images/testimonial/2.jpg"),
     review:
-      "The team provided an exceptional web development solution tailored to our needs. Their attention to detail and innovative approach impressed us!",
+      "The team at Znth Tech Pvt Ltd delivered a tailored web development solution that exceeded our expectations. Their attention to detail and innovative approach helped us create a highly engaging website. They were professional, met all deadlines, and provided exceptional post-launch support. We're thrilled with the results and how it positively impacted our online presence.",
   },
   {
     name: "Priya Sharma",
     designation: "Product Manager, Appify Co.",
     image: require("../assets/images/testimonial/1.jpg"),
     review:
-      "Their app development service was outstanding. They delivered a user-friendly app on time, exceeding our expectations!",
+      "Working with Znth Tech Pvt Ltd on our app development was a fantastic experience. They delivered a user-friendly app on time that exceeded our expectations. The team was highly responsive and flexible, and the final product was polished and ready for launch. We couldn’t be more pleased with the outcome.",
   },
   {
     name: "Ravi Patel",
     designation: "Founder, AI Ventures",
     image: require("../assets/images/testimonial/3.jpg"),
     review:
-      "The AI development team showcased deep expertise and delivered a cutting-edge solution that boosted our business efficiency significantly.",
+      "Znth Tech Pvt Ltd’s AI development team delivered a cutting-edge solution that significantly improved our efficiency. Their expertise in AI and understanding of our business needs helped us automate key processes, providing valuable insights. The solution has been a major boost to our operations.",
   },
   {
     name: "Arun Nair",
     designation: "CTO, CodeWorks Inc.",
     image: require("../assets/images/testimonial/4.jpg"),
     review:
-      "Their software development services were top-notch. The team was professional, responsive, and delivered high-quality software that met all our requirements.",
+      "The software development services from Znth Tech Pvt Ltd were top-notch. They understood our requirements perfectly and delivered a high-quality, scalable solution on time. Their team was professional, responsive, and ensured that the product met all our expectations. We’re very satisfied with the result.",
   },
 ];
 

@@ -1,54 +1,19 @@
 import React from "react";
 import { logo, services } from "../../data/constant";
-import { websiteLinks } from "./Header";
 import { Link } from "react-router-dom";
 import { createUrlParam } from "../../utils/helper";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-const Footer = () => {
+const LandingFooter = () => {
   return (
     <div className="relative bg-primary mt-[4rem]">
-      <div className="wrapper text-white grid lg:grid-cols-[30%_auto] gap-5">
-        <div className="bg-white w-full lg:h-[calc(100%+2rem)] relative z-10 px-5 py-[2rem] flex flex-col gap-3 items-center">
+      <div className="wrapper text-white grid justify-center sm:justify-between sm:grid-cols-[30%_auto] gap-5">
+        <div className="bg-white w-full sm:h-[calc(100%+2rem)] relative z-10 px-5 py-[2rem] flex flex-col gap-3 items-center">
           <img src={logo} className="w-[10rem] object-contain" alt="Logo" />
-          <p className="text-black max-w-sm">
-            Empowering businesses with innovative solutions and unmatched
-            expertise to drive growth and success in the digital age.
-          </p>
         </div>
-        <div className="px-5 pt-[2rem] pb-[4rem] grid lg:grid-cols-3 gap-10 lg:gap-0">
-          <div className="space-y-3">
-            <h5 className="text-lg font-bold">Quick Links</h5>
-            <ul className="space-y-2">
-              {websiteLinks.map((item) => (
-                <li>
-                  <Link
-                    to={item.path}
-                    className="hover:text-secondary transition-all duration-200"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="space-y-3">
-            <h5 className="text-lg font-bold">Services</h5>
-            <ul className="space-y-2">
-              {services.map((item) => (
-                <li>
-                  <Link
-                    to={`/services/${createUrlParam(item.title)}`}
-                    className="hover:text-secondary transition-all duration-200"
-                  >
-                    {item.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="flex gap-4 lg:justify-end">
+        <div className="px-5 pb-[2rem] sm:pb-0 w-full flex flex-col justify-center items-center sm:items-end gap-4">
+          <div className="flex gap-4">
             <Link className="w-7 h-7 flex hover:bg-secondary transition-all duration-200 justify-center items-center rounded-full border border-white">
               <FaLinkedinIn className="fill-white" size={16} strokeWidth={1} />
             </Link>
@@ -66,6 +31,9 @@ const Footer = () => {
               <FaXTwitter className="fill-white" size={16} strokeWidth={1} />
             </Link>
           </div>
+          <p className="text-center">
+            Copyright © {new Date().getFullYear()}. All rights reserved
+          </p>
         </div>
       </div>
       <div className="h-[2rem] relative bottom-0 w-full bg-secondary"></div>
@@ -73,4 +41,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default LandingFooter;

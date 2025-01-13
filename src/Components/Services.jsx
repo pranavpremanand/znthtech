@@ -5,7 +5,7 @@ import { LuCircleArrowOutUpRight } from "react-icons/lu";
 
 const Services = ({ title, heading, data }) => {
   return (
-    <div className="wrapper pt-[5rem]">
+    <div id="services" className="wrapper pt-[5rem]">
       <div
         data-aos="fade-up"
         className="space-y-4 flex flex-col sm:items-center sm:text-center max-w-2xl mx-auto"

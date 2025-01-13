@@ -29,7 +29,7 @@ import { ImPhone } from "react-icons/im";
 const LandingPage = ({ page }) => {
   const isWeb = page === "web";
   return (
-    <div className="pt-[5rem]">
+    <div id="banner" className="pt-[5rem]">
       <section className="relative min-h-screen flex items-center justify-center bg-black/30">
         <div className="pt-[8rem] pb-[4rem]">
           <div
@@ -185,7 +185,7 @@ const LandingPage = ({ page }) => {
         </div>
       </div>
 
-      <section className="pt-[5rem]">
+      <section id='about' className="pt-[5rem]">
         <div className="wrapper grid md:grid-cols-2 gap-7">
           <div data-aos="fade-right" className="space-y-4">
             <p className="uppercase text-primary text-center md:text-start">
