@@ -1,10 +1,10 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useState } from "react";
 import { LoadingSpinner } from "./LoadingSpinner";
 
 export const SpinnerContext = createContext(null);
 
 const SpinnerContextProvider = ({ children }) => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   return (
     <SpinnerContext.Provider
       value={{
@@ -12,15 +12,10 @@ const SpinnerContextProvider = ({ children }) => {
         setLoading,
       }}
     >
+      {loading && <LoadingSpinner />}
       {children}
     </SpinnerContext.Provider>
   );
 };
 
 export default SpinnerContextProvider;
-
-// component to manage loading spinner based on context
-export const LoadingSpinnerContext = () => {
-  const { spinner } = useContext(SpinnerContext);
-  return spinner && <LoadingSpinner />;
-};

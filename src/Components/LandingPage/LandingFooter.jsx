@@ -1,7 +1,6 @@
 import React from "react";
-import { logo, services } from "../../data/constant";
+import { logo } from "../../data/constant";
 import { Link } from "react-router-dom";
-import { createUrlParam } from "../../utils/helper";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
