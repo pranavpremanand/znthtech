@@ -23,9 +23,9 @@ const ContactUs = () => {
       <div className="wrapper pt-[5rem]">
         <div
           data-aos="fade-up"
-          className="space-y-4 flex flex-col items-center text-center"
+          className="space-y-4 flex flex-col md:items-center md:text-center"
         >
-          <p className="uppercase text-primary text-center md:text-start">
+          <p className="uppercase text-primary">
             contact us
           </p>
           <h3 className="section-heading">

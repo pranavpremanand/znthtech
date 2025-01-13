@@ -57,12 +57,8 @@ const MapComponent = () => {
       className="rounded h-[60vh] md:h-auto w-full z-0"
       whenCreated={(mapInstance) => (mapRef.current = mapInstance)}
       scrollWheelZoom={false}
-      zoomControl={false}
     >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution="© OpenStreetMap contributors"
-      />
+      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <MarkerWithAutoPopup
         position={location}
         content={companyDetails.address}

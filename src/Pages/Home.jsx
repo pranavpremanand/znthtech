@@ -17,6 +17,7 @@ import { BiSupport } from "react-icons/bi";
 import { FaPeopleGroup } from "react-icons/fa6";
 import Testimonials from "../Components/Testimonials";
 import BlogsSection from "../Components/Website/BlogsSection";
+import PortfolioList from "../Components/PortfolioList";
 
 const Home = () => {
   return (
@@ -138,7 +139,7 @@ const Home = () => {
 
       <section className="pt-[5rem]">
         <div className="wrapper grid md:grid-cols-2 gap-7">
-          <div data-aos='fade-right' className="space-y-4">
+          <div data-aos="fade-right" className="space-y-4">
             <p className="uppercase text-primary text-center md:text-start">
               About us
             </p>
@@ -193,7 +194,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div data-aos='fade-left' className="hidden md:flex flex-col">
+          <div data-aos="fade-left" className="hidden md:flex flex-col">
             <img
               src={aboutImg}
               alt="About Us"
@@ -203,7 +204,10 @@ const Home = () => {
         </div>
       </section>
       <section className="wrapper pt-[5rem]">
-        <div data-aos='fade-up' className="space-y-4 flex flex-col sm:items-center sm:text-center max-w-2xl mx-auto">
+        <div
+          data-aos="fade-up"
+          className="space-y-4 flex flex-col sm:items-center sm:text-center max-w-2xl mx-auto"
+        >
           <p className="uppercase text-primary">Why Choose Us</p>
           <h3 className="section-heading">
             We Are Here to Grow Your Business Exponentially
@@ -211,7 +215,7 @@ const Home = () => {
           <HrLine />
         </div>
         <div className="mt-[2rem] grid sm:grid-cols-2 md:grid-cols-3 gap-7">
-          <div data-aos='fade-right' className="flex flex-col gap-7">
+          <div data-aos="fade-right" className="flex flex-col gap-7">
             <div className="space-y-3">
               <div className="bg-primary w-[3.5rem] aspect-square flex justify-center items-center p-3">
                 <FaRegThumbsUp size={30} className="text-white" />
@@ -239,14 +243,17 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div data-aos='fade-up' className="sm:row-span-2 md:row-span-1 w-full h-full aspect-[4/3] sm:aspect-auto md:aspect-square overflow-hidden rounded-xl">
+          <div
+            data-aos="fade-up"
+            className="sm:row-span-2 md:row-span-1 w-full h-full aspect-[4/3] sm:aspect-auto md:aspect-square overflow-hidden rounded-xl"
+          >
             <img
               src={whyChooseImg}
               alt="Why Choose Us"
               className="md:aspect-[2/3] w-full h-full object-cover object-bottom"
             />
           </div>
-          <div data-aos='fade-left' className="flex flex-col gap-7">
+          <div data-aos="fade-left" className="flex flex-col gap-7">
             <div className="space-y-3">
               <div className="bg-primary w-[3.5rem] aspect-square flex justify-center items-center p-3">
                 <FaPeopleGroup size={30} className="text-white" />
@@ -280,6 +287,7 @@ const Home = () => {
         heading="Custom IT Solutions for Your Successful Business"
         data={services}
       />
+      <PortfolioList />
       <ContactForm />
       <Testimonials />
       <BlogsSection />

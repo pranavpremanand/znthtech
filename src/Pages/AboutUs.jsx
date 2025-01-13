@@ -15,9 +15,7 @@ const AboutUs = () => {
       <PageBanner banner={banner} title="About Us" />
       <section className="pt-[5rem] wrapper grid md:grid-cols-2 gap-7">
         <div data-aos="fade-right" className="space-y-4">
-          <p className="uppercase text-primary text-center md:text-start">
-            Our Vision
-          </p>
+          <p className="uppercase text-primary text-start">Our Vision</p>
           <h3 className="section-heading">
             Transforming Ideas into Digital Success.
           </h3>
@@ -61,21 +59,31 @@ const AboutUs = () => {
         </div>
       </section>
       <section className="pt-[5rem] wrapper grid md:grid-cols-2 gap-7">
-        <div data-aos='fade-right' className="w-full h-full">
+        <div data-aos="fade-right" className="md:block hidden w-full h-full">
           <img
             src={missionImg}
             className="w-full h-full object-cover rounded-lg"
             alt="Our Mission"
           />
         </div>
-        <div data-aos='fade-left' className="space-y-4">
-          <p className="uppercase text-primary text-center md:text-start">
+        <div data-aos="fade-left" className="space-y-4">
+          <p className="uppercase text-primary text-center">
             Our Mission
           </p>
           <h3 className="section-heading">
             Innovating Today for a Smarter Tomorrow.
           </h3>
           <HrLine />
+          <div
+            data-aos="fade-right"
+            className="block md:hidden w-full aspect-square"
+          >
+            <img
+              src={missionImg}
+              className="w-full h-full object-cover rounded-lg"
+              alt="Our Mission"
+            />
+          </div>
           <p>
             At Znth Tech, our mission is to drive digital excellence by
             providing businesses with innovative, reliable, and tailored IT

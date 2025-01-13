@@ -25,6 +25,7 @@ import appAboutImg from "../assets/images/app-dev-about.webp";
 import ContactForm2 from "../Components/ContactForm2";
 import { TiArrowBack } from "react-icons/ti";
 import { ImPhone } from "react-icons/im";
+import Portfolio from "../Components/LandingPage/Portfolio";
 
 const LandingPage = ({ page }) => {
   const isWeb = page === "web";
@@ -185,7 +186,7 @@ const LandingPage = ({ page }) => {
         </div>
       </div>
 
-      <section id='about' className="pt-[5rem]">
+      <section id="about" className="pt-[5rem]">
         <div className="wrapper grid md:grid-cols-2 gap-7">
           <div data-aos="fade-right" className="space-y-4">
             <p className="uppercase text-primary text-center md:text-start">
@@ -343,6 +344,7 @@ const LandingPage = ({ page }) => {
         }
         data={isWeb ? webDevelopmentServices : appDevelopmentServices}
       />
+      <Portfolio page={page} />
       <Testimonials />
       <ContactForm />
     </div>

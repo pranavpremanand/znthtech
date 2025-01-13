@@ -13,9 +13,9 @@ const Blogs = () => {
       <div className="wrapper pt-[5rem] space-y-6">
         <div
           data-aos="fade-up"
-          className="space-y-4 flex flex-col items-center text-center"
+          className="space-y-4 flex flex-col md:items-center md:text-center"
         >
-          <p className="uppercase text-primary text-center md:text-start">
+          <p className="uppercase text-primary">
             Blogs
           </p>
           <h3 className="section-heading">
