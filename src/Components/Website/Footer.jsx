@@ -2,7 +2,6 @@ import React from "react";
 import { logo, services } from "../../data/constant";
 import { websiteLinks } from "./Header";
 import { Link } from "react-router-dom";
-import { createUrlParam } from "../../utils/helper";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -39,7 +38,7 @@ const Footer = () => {
               {services.map((item) => (
                 <li>
                   <Link
-                    to={`/services/${createUrlParam(item.title)}`}
+                    to={`/services/${item.title}`}
                     className="hover:text-secondary transition-all duration-200"
                   >
                     {item.title}
