@@ -23,7 +23,7 @@ AOS.init({
   once: true,
   duration: 500,
   easing: "ease-in-out-quart",
-  offset: -150,
+  offset: -70,
 });
 
 function App() {
