@@ -157,7 +157,7 @@ const LandingPage = ({ page }) => {
         </div>
       </div>
 
-      <div className="pt-[2rem] wrapper grid md:grid-cols-[auto_55%] gap-7">
+      <div className="pt-[2rem] wrapper flex flex-col-reverse md:grid grid-cols-[auto_55%] gap-7">
         <div className="">
           <ContactForm2 />
         </div>
