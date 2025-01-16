@@ -28,7 +28,7 @@ const Home = () => {
             data-aos="fade-up"
             className="wrapper flex flex-col text-center text-white gap-5 justify-center h-full"
           >
-            <p className="section-heading">Welcome to Znth Tech Pvt Ltd</p>
+            <p className="section-heading">Welcome to ZNTH Tech Pvt Ltd</p>
             <h1 className="heading">Your Ultimate IT Solution Provider</h1>
             <div className="flex sm:flex-row flex-col justify-center gap-5 mt-5">
               <Link to="/about-us" className="primary-btn">
@@ -155,7 +155,7 @@ const Home = () => {
             </h3>
             <HrLine />
             <p>
-              Znth Tech Pvt Ltd is an Indian IT company that specializes in
+              ZNTH Tech Pvt Ltd is an Indian IT company that specializes in
               delivering end-to-end technology solutions to businesses across
               the globe. From strategy to implementation, we empower
               organizations with innovative, cutting-edge solutions that drive
@@ -236,7 +236,7 @@ const Home = () => {
               <div className="space-y-1">
                 <p className="font-bold text-lg">Award Winning</p>
                 <p>
-                  With a proven track record of success, Znth Tech has been
+                  With a proven track record of success, ZNTH Tech has been
                   honored with multiple industry awards for innovation and
                   outstanding service.
                 </p>

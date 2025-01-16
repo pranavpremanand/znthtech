@@ -38,7 +38,7 @@ const LandingPage = ({ page }) => {
             data-aos="fade-up"
             className="wrapper flex flex-col text-center text-white gap-5 justify-center h-full"
           >
-            <p className="section-heading">Welcome to Znth Tech Pvt Ltd</p>
+            <p className="section-heading">Welcome to ZNTH Tech Pvt Ltd</p>
             <h1 className="heading">
               {isWeb
                 ? "Websites Designed to Engage, Convert, and Delight"
@@ -214,8 +214,8 @@ const LandingPage = ({ page }) => {
             <HrLine />
             <p>
               {isWeb
-                ? "At Znth Tech Pvt Ltd, we specialize in creating high-performance, user-centric websites that deliver exceptional results. From conceptualization to deployment, our expert team provides innovative web development solutions that empower businesses to expand their digital presence, engage customers, and drive growth."
-                : "Znth Tech Pvt Ltd offers comprehensive mobile app development services that deliver tailored, seamless, and intuitive solutions. From ideation to launch, we create innovative mobile apps that empower businesses to enhance user experiences, drive engagement, and scale globally."}
+                ? "At ZNTH Tech Pvt Ltd, we specialize in creating high-performance, user-centric websites that deliver exceptional results. From conceptualization to deployment, our expert team provides innovative web development solutions that empower businesses to expand their digital presence, engage customers, and drive growth."
+                : "ZNTH Tech Pvt Ltd offers comprehensive mobile app development services that deliver tailored, seamless, and intuitive solutions. From ideation to launch, we create innovative mobile apps that empower businesses to enhance user experiences, drive engagement, and scale globally."}
             </p>
             <div className="grid grid-cols-2 gap-5 pt-5">
               {[
@@ -289,7 +289,7 @@ const LandingPage = ({ page }) => {
               <div className="space-y-1">
                 <p className="font-bold text-lg">Award Winning</p>
                 <p>
-                  With a proven track record of success, Znth Tech has been
+                  With a proven track record of success, ZNTH Tech has been
                   honored with multiple industry awards for innovation and
                   outstanding service.
                 </p>

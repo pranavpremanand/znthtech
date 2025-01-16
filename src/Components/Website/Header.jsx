@@ -114,7 +114,10 @@ const Header = () => {
                   {link.name}
                 </Link>
               ))}
-              <Link className="primary-btn" to="/contact-us">
+              <Link
+                className="bg-primary dark:border border-primary cursor-pointer text-white py-3 px-6 rounded-full hover:bg-secondary hover:shadow-2xl shadow-secondary flex justify-center items-center hover:-translate-y-1 transition-all duration-300"
+                to="/contact-us"
+              >
                 Contact Us
               </Link>
             </div>

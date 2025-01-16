@@ -39,28 +39,28 @@ export const testimonials = [
     designation: "CEO, Tech Innovators",
     image: require("../assets/images/testimonial/2.jpg"),
     review:
-      "The team at Znth Tech Pvt Ltd delivered a tailored web development solution that exceeded our expectations. Their attention to detail and innovative approach helped us create a highly engaging website. They were professional, met all deadlines, and provided exceptional post-launch support. We're thrilled with the results and how it positively impacted our online presence.",
+      "The team at ZNTH Tech Pvt Ltd delivered a tailored web development solution that exceeded our expectations. Their attention to detail and innovative approach helped us create a highly engaging website. They were professional, met all deadlines, and provided exceptional post-launch support. We're thrilled with the results and how it positively impacted our online presence.",
   },
   {
     name: "Priya Sharma",
     designation: "Product Manager, Appify Co.",
     image: require("../assets/images/testimonial/1.jpg"),
     review:
-      "Working with Znth Tech Pvt Ltd on our app development was a fantastic experience. They delivered a user-friendly app on time that exceeded our expectations. The team was highly responsive and flexible, and the final product was polished and ready for launch. We couldn’t be more pleased with the outcome.",
+      "Working with ZNTH Tech Pvt Ltd on our app development was a fantastic experience. They delivered a user-friendly app on time that exceeded our expectations. The team was highly responsive and flexible, and the final product was polished and ready for launch. We couldn’t be more pleased with the outcome.",
   },
   {
     name: "Ravi Patel",
     designation: "Founder, AI Ventures",
     image: require("../assets/images/testimonial/3.jpg"),
     review:
-      "Znth Tech Pvt Ltd’s AI development team delivered a cutting-edge solution that significantly improved our efficiency. Their expertise in AI and understanding of our business needs helped us automate key processes, providing valuable insights. The solution has been a major boost to our operations.",
+      "ZNTH Tech Pvt Ltd’s AI development team delivered a cutting-edge solution that significantly improved our efficiency. Their expertise in AI and understanding of our business needs helped us automate key processes, providing valuable insights. The solution has been a major boost to our operations.",
   },
   {
     name: "Arun Nair",
     designation: "CTO, CodeWorks Inc.",
     image: require("../assets/images/testimonial/4.jpg"),
     review:
-      "The software development services from Znth Tech Pvt Ltd were top-notch. They understood our requirements perfectly and delivered a high-quality, scalable solution on time. Their team was professional, responsive, and ensured that the product met all our expectations. We’re very satisfied with the result.",
+      "The software development services from ZNTH Tech Pvt Ltd were top-notch. They understood our requirements perfectly and delivered a high-quality, scalable solution on time. Their team was professional, responsive, and ensured that the product met all our expectations. We’re very satisfied with the result.",
   },
 ];
 
@@ -212,7 +212,7 @@ export const services = [
     id: 1,
     title: "AI Development",
     icon: icon1,
-    desc: "Transform your business with Znth Tech's tailored AI development solutions. From automating processes to delivering actionable insights, we help you innovate, scale, and stay ahead in a dynamic digital world.",
+    desc: "Transform your business with ZNTH Tech's tailored AI development solutions. From automating processes to delivering actionable insights, we help you innovate, scale, and stay ahead in a dynamic digital world.",
     detailsPage: {
       banner: require("../assets/images/banners/ai-development.webp"),
       img1: require("../assets/images/service-details/ai-1.jpeg"),
@@ -228,7 +228,7 @@ export const services = [
       In today’s competitive landscape, Artificial Intelligence (AI) has become a transformative force, empowering businesses to streamline operations, enhance customer engagement, and make data-driven decisions.
     </p>
     <p class="">
-      At <span class="font-bold text-secondary dark:text-primary">Znth Tech</span>, we specialize in crafting tailored AI solutions that enable organizations to unlock the full potential of AI and stay ahead of the curve.
+      At <span class="font-bold text-secondary dark:text-primary">ZNTH Tech</span>, we specialize in crafting tailored AI solutions that enable organizations to unlock the full potential of AI and stay ahead of the curve.
     </p>
    </div>
   </div>`,
@@ -280,7 +280,7 @@ export const services = [
       Our Expertise in AI Development
     </h2>
     <p>
-      At Znth Tech, we understand that every business is unique. That’s why we offer customized AI solutions designed to meet your specific needs and goals.
+      At ZNTH Tech, we understand that every business is unique. That’s why we offer customized AI solutions designed to meet your specific needs and goals.
     </p>
     <ul class="space-y-5 list-disc pl-6">
       <li>
@@ -317,7 +317,7 @@ export const services = [
     id: 2,
     title: "Web Development",
     icon: icon2,
-    desc: "Elevate your online presence with Znth Tech’s cutting-edge web development services. We craft responsive, user-centric websites that drive engagement, enhance functionality, and fuel business growth.",
+    desc: "Elevate your online presence with ZNTH Tech’s cutting-edge web development services. We craft responsive, user-centric websites that drive engagement, enhance functionality, and fuel business growth.",
     detailsPage: {
       banner: require("../assets/images/banners/web-development.webp"),
       img1: require("../assets/images/service-details/web-dev-1.webp"),
@@ -332,7 +332,7 @@ export const services = [
       In today’s digital-first world, a well-crafted website is essential for connecting with your audience and driving business success.
     </p>
     <p>
-      At <span class="font-bold text-secondary dark:text-primary">Znth Tech</span>, we specialize in creating custom, responsive websites that deliver a seamless user experience, enhance functionality, and fuel your growth.
+      At <span class="font-bold text-secondary dark:text-primary">ZNTH Tech</span>, we specialize in creating custom, responsive websites that deliver a seamless user experience, enhance functionality, and fuel your growth.
     </p>
   </div>
 </div>
@@ -340,7 +340,7 @@ export const services = [
       secondSection: `<div class="py-6">
   <div class="space-y-6">
     <h2 class="text-xl font-bold">
-      Why Choose Znth Tech for Web Development?
+      Why Choose ZNTH Tech for Web Development?
     </h2>
     <ul class="space-y-5 list-decimal pl-6">
       <li>
@@ -418,7 +418,7 @@ export const services = [
     id: 3,
     title: "App Development",
     icon: icon3,
-    desc: "Take your business to the next level with Znth Tech’s innovative app development services. We design and develop mobile applications that deliver seamless experiences, enhance user engagement, and drive growth.",
+    desc: "Take your business to the next level with ZNTH Tech’s innovative app development services. We design and develop mobile applications that deliver seamless experiences, enhance user engagement, and drive growth.",
     detailsPage: {
       banner: require("../assets/images/banners/app-development.webp"),
       img1: require("../assets/images/service-details/app-dev-1.webp"),
@@ -433,7 +433,7 @@ export const services = [
             In the mobile-first world, having an app that resonates with your audience is crucial for business success.
           </p>
           <p>
-            At <span class="font-bold text-secondary dark:text-primary">Znth Tech</span>, we specialize in developing high-quality mobile applications that provide an exceptional user experience, enhance functionality, and grow your business.
+            At <span class="font-bold text-secondary dark:text-primary">ZNTH Tech</span>, we specialize in developing high-quality mobile applications that provide an exceptional user experience, enhance functionality, and grow your business.
           </p>
         </div>
       </div>
@@ -441,7 +441,7 @@ export const services = [
       secondSection: `<div class="py-6">
         <div class="space-y-6">
           <h2 class="text-xl font-bold">
-            Why Choose Znth Tech for App Development?
+            Why Choose ZNTH Tech for App Development?
           </h2>
           <ul class="space-y-5 list-decimal pl-6">
             <li>
@@ -518,7 +518,7 @@ export const services = [
     id: 4,
     title: "Software Development",
     icon: icon4,
-    desc: "Empower your business with Znth Tech’s custom software development solutions. We design scalable, high-performance software tailored to streamline operations and drive growth.",
+    desc: "Empower your business with ZNTH Tech’s custom software development solutions. We design scalable, high-performance software tailored to streamline operations and drive growth.",
     detailsPage: {
       banner: require("../assets/images/banners/software-development.webp"),
       img1: require("../assets/images/service-details/software-dev-1.webp"),
@@ -533,14 +533,14 @@ export const services = [
             In today’s fast-paced digital world, businesses require tailored software solutions that drive efficiency, productivity, and growth.
           </p>
           <p>
-            At <span class="font-bold text-secondary dark:text-primary">Znth Tech</span>, we specialize in developing high-performance, scalable software solutions that are custom-built to meet your unique business needs and challenges.
+            At <span class="font-bold text-secondary dark:text-primary">ZNTH Tech</span>, we specialize in developing high-performance, scalable software solutions that are custom-built to meet your unique business needs and challenges.
           </p>
         </div>
       </div>`,
       secondSection: `<div class="py-6">
         <div class="space-y-6">
           <h2 class="text-xl font-bold">
-            Why Choose Znth Tech for Software Development?
+            Why Choose ZNTH Tech for Software Development?
           </h2>
           <ul class="space-y-5 list-decimal pl-6">
             <li>
@@ -576,7 +576,7 @@ export const services = [
             Our Expertise in Software Development
           </h2>
           <p>
-            At Znth Tech, we combine technical expertise with business acumen to deliver software solutions that drive growth and efficiency.
+            At ZNTH Tech, we combine technical expertise with business acumen to deliver software solutions that drive growth and efficiency.
           </p>
           <ul class="space-y-5 list-disc pl-6">
             <li>
@@ -612,7 +612,7 @@ export const services = [
     id: 5,
     title: "IT Consultancy and Strategy",
     icon: icon5,
-    desc: "Navigate the digital landscape with confidence using Znth Tech’s IT consultancy and strategy services. We provide expert guidance to align technology with your business goals and drive sustainable growth.",
+    desc: "Navigate the digital landscape with confidence using ZNTH Tech’s IT consultancy and strategy services. We provide expert guidance to align technology with your business goals and drive sustainable growth.",
     detailsPage: {
       banner: require("../assets/images/banners/it-consulting.webp"),
       img1: require("../assets/images/service-details/it-consulting-1.webp"),
@@ -628,7 +628,7 @@ export const services = [
               In today’s fast-evolving digital world, businesses need to leverage technology to stay ahead. Our IT consultancy and strategy services help you navigate complex technology challenges and align solutions with your business goals.
             </p>
             <p>
-              At <span class="font-bold text-secondary dark:text-primary">Znth Tech</span>, we work closely with your team to understand your unique needs, analyze current systems, and design a strategic roadmap that drives digital transformation and business growth.
+              At <span class="font-bold text-secondary dark:text-primary">ZNTH Tech</span>, we work closely with your team to understand your unique needs, analyze current systems, and design a strategic roadmap that drives digital transformation and business growth.
             </p>
           </div>
         </div>
@@ -637,7 +637,7 @@ export const services = [
         <div class="py-6">
           <div class="space-y-6">
             <h2 class="text-xl font-bold">
-              Why Choose Znth Tech for IT Consultancy?
+              Why Choose ZNTH Tech for IT Consultancy?
             </h2>
             <ul class="space-y-5 list-decimal pl-6">
               <li>
@@ -715,7 +715,7 @@ export const services = [
     id: 6,
     title: "IT Infrastructure Management",
     icon: icon6,
-    desc: "Optimize your IT operations with Znth Tech’s comprehensive infrastructure management services. We ensure seamless, secure, and scalable solutions that support your business’s evolving needs.",
+    desc: "Optimize your IT operations with ZNTH Tech’s comprehensive infrastructure management services. We ensure seamless, secure, and scalable solutions that support your business’s evolving needs.",
     detailsPage: {
       banner: require("../assets/images/banners/it-infrastructure.webp"),
       img1: require("../assets/images/service-details/it-infrastructure-1.webp"),
@@ -728,7 +728,7 @@ export const services = [
               Strengthen Your Business with Robust IT Infrastructure
             </h2>
             <p>
-              Znth Tech’s IT Infrastructure Management services are designed to ensure your business operates at peak efficiency. From data center management to network support, we handle the complexities of infrastructure, allowing you to focus on growth and innovation.
+              ZNTH Tech’s IT Infrastructure Management services are designed to ensure your business operates at peak efficiency. From data center management to network support, we handle the complexities of infrastructure, allowing you to focus on growth and innovation.
             </p>
             <p>
               Our team of experts ensures your infrastructure is always secure, reliable, and scalable, giving you the peace of mind to focus on your core business operations.
@@ -740,7 +740,7 @@ export const services = [
         <div class="py-6">
           <div class="space-y-6">
             <h2 class="text-xl font-bold">
-              Why Choose Znth Tech for IT Infrastructure Management?
+              Why Choose ZNTH Tech for IT Infrastructure Management?
             </h2>
             <ul class="space-y-5 list-decimal pl-6">
               <li>

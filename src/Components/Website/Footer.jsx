@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="bg-white dark:bg-secondary w-full lg:h-[calc(100%+2rem)] relative z-10 px-5 py-[2rem] flex flex-col gap-3 items-center">
           <img src={logo} className="w-[10rem] object-contain dark:hidden block" alt="Logo" />
           <img src={logoDark} className="w-[10rem] object-contain hidden dark:block" alt="Logo" />
-          <p className="dark:text-white max-w-sm">
+          <p className="dark:text-white text-black max-w-sm">
             Empowering businesses with innovative solutions and unmatched
             expertise to drive growth and success in the digital age.
           </p>

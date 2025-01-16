@@ -23,7 +23,7 @@ const AboutUs = () => {
           </h3>
           <HrLine />
           <p>
-            At Znth Tech Pvt. Ltd., our vision is to be the global leader in
+            At ZNTH Tech Pvt. Ltd., our vision is to be the global leader in
             providing innovative IT solutions that drive digital transformation
             and business growth. We aim to empower businesses worldwide by
             delivering cutting-edge technologies that unlock new opportunities,
@@ -85,7 +85,7 @@ const AboutUs = () => {
             />
           </div>
           <p>
-            At Znth Tech, our mission is to drive digital excellence by
+            At ZNTH Tech, our mission is to drive digital excellence by
             providing businesses with innovative, reliable, and tailored IT
             solutions. We strive to bridge the gap between technology and
             business success, empowering organizations to achieve their goals
