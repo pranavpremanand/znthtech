@@ -1,4 +1,5 @@
 import logo from "../assets/logo/logo.png";
+import logoDark from "../assets/logo/dark-logo.png";
 
 // services icons (website)
 import { ReactComponent as icon1 } from "../assets/svg/services/AI Development.svg";
@@ -22,7 +23,7 @@ import { ReactComponent as webIcon4 } from "../assets/svg/services/UIUX Design.s
 import { FaGlobe } from "react-icons/fa";
 import { AiFillAppstore } from "react-icons/ai";
 
-export { logo };
+export { logo, logoDark };
 
 export const companyDetails = {
   email: "xyz@example.com",
@@ -227,7 +228,7 @@ export const services = [
       In today’s competitive landscape, Artificial Intelligence (AI) has become a transformative force, empowering businesses to streamline operations, enhance customer engagement, and make data-driven decisions.
     </p>
     <p class="">
-      At <span class="font-bold text-secondary">Znth Tech</span>, we specialize in crafting tailored AI solutions that enable organizations to unlock the full potential of AI and stay ahead of the curve.
+      At <span class="font-bold text-secondary dark:text-primary">Znth Tech</span>, we specialize in crafting tailored AI solutions that enable organizations to unlock the full potential of AI and stay ahead of the curve.
     </p>
    </div>
   </div>`,
@@ -331,7 +332,7 @@ export const services = [
       In today’s digital-first world, a well-crafted website is essential for connecting with your audience and driving business success.
     </p>
     <p>
-      At <span class="font-bold text-secondary">Znth Tech</span>, we specialize in creating custom, responsive websites that deliver a seamless user experience, enhance functionality, and fuel your growth.
+      At <span class="font-bold text-secondary dark:text-primary">Znth Tech</span>, we specialize in creating custom, responsive websites that deliver a seamless user experience, enhance functionality, and fuel your growth.
     </p>
   </div>
 </div>
@@ -432,7 +433,7 @@ export const services = [
             In the mobile-first world, having an app that resonates with your audience is crucial for business success.
           </p>
           <p>
-            At <span class="font-bold text-secondary">Znth Tech</span>, we specialize in developing high-quality mobile applications that provide an exceptional user experience, enhance functionality, and grow your business.
+            At <span class="font-bold text-secondary dark:text-primary">Znth Tech</span>, we specialize in developing high-quality mobile applications that provide an exceptional user experience, enhance functionality, and grow your business.
           </p>
         </div>
       </div>
@@ -532,7 +533,7 @@ export const services = [
             In today’s fast-paced digital world, businesses require tailored software solutions that drive efficiency, productivity, and growth.
           </p>
           <p>
-            At <span class="font-bold text-secondary">Znth Tech</span>, we specialize in developing high-performance, scalable software solutions that are custom-built to meet your unique business needs and challenges.
+            At <span class="font-bold text-secondary dark:text-primary">Znth Tech</span>, we specialize in developing high-performance, scalable software solutions that are custom-built to meet your unique business needs and challenges.
           </p>
         </div>
       </div>`,
@@ -627,7 +628,7 @@ export const services = [
               In today’s fast-evolving digital world, businesses need to leverage technology to stay ahead. Our IT consultancy and strategy services help you navigate complex technology challenges and align solutions with your business goals.
             </p>
             <p>
-              At <span class="font-bold text-secondary">Znth Tech</span>, we work closely with your team to understand your unique needs, analyze current systems, and design a strategic roadmap that drives digital transformation and business growth.
+              At <span class="font-bold text-secondary dark:text-primary">Znth Tech</span>, we work closely with your team to understand your unique needs, analyze current systems, and design a strategic roadmap that drives digital transformation and business growth.
             </p>
           </div>
         </div>

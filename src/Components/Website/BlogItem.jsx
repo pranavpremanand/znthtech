@@ -15,11 +15,11 @@ const BlogItem = ({ item }) => {
         className="w-full aspect-video group-hover:brightness-75 duration-200 transition-all"
       />
       <div className="px-5 py-4 space-y-2">
-        <h6 className="text-lg font-semibold text-secondary line-clamp-2 group-hover:text-primary duration-200 transition-all">
+        <h6 className="text-lg font-semibold text-secondary dark:text-white line-clamp-2 group-hover:text-primary duration-200 transition-all">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit.
         </h6>
-        <p className="line-clamp-3">
+        <p className="line-clamp-3 text-gray-300">
           Boluptatum dolores porro ex laborum officiis magnam deleniti ea velit
           dolore inventore consequuntur voluptas sit doloribus vero? Eos dolorum
           deleniti provident! Ab incidunt quae quod impedit, veritatis ipsum non
@@ -28,7 +28,7 @@ const BlogItem = ({ item }) => {
         </p>
         <Link
           to="/blogs/1"
-          className="text-primary flex items-center gap-2 group-hover:text-secondary w-fit"
+          className="text-primary flex items-center gap-2 group-hover:text-secondary dark:group-hover:text-white w-fit"
         >
           Read More <FaArrowRight />
         </Link>

@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div className="pt-[5rem]">
       <section className="relative min-h-screen flex items-center justify-center bg-black/30">
-        <div className="pt-[4rem] md:pt-[8rem] pb-[4rem]">
+        <div className="z-10 pt-[4rem] md:pt-[8rem] pb-[4rem]">
           <div
             data-aos="fade-up"
             className="wrapper flex flex-col text-center text-white gap-5 justify-center h-full"
@@ -56,7 +56,7 @@ const Home = () => {
               position: "absolute",
               top: 0,
               left: 0,
-              zIndex: -1,
+              zIndex: 1,
             }}
             config={{
               file: {
@@ -72,7 +72,7 @@ const Home = () => {
           />
         </div>
       </section>
-      <div className="wrapper pt-[3rem] sm:pt-0 sm:-translate-y-1/3 md:-translate-y-1/2">
+      <div className="relative z-10 wrapper pt-[3rem] sm:pt-0 sm:-translate-y-1/3 md:-translate-y-1/2">
         <div className="grid md:grid-cols-3">
           <div
             data-aos="fade-up"

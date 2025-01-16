@@ -9,6 +9,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ThemeContextProvider from "./Components/ThemeContext";
 
 const Home = lazy(() => import("./Pages/Home"));
 const AboutUs = lazy(() => import("./Pages/AboutUs"));
@@ -28,38 +29,42 @@ AOS.init({
 
 function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTopButton />
-      <ScrollToTop />
-      <SpinnerContextProvider>
-        <Suspense fallback={<LoadingSpinner />}>
-          <Routes>
-            <Route path="/" element={<MainLayout />}>
-              <Route index element={<Home />} />
-              <Route path="*" element={<Navigate to="/" />} />
-              <Route path="about-us" element={<AboutUs />} />
-              <Route path="services" element={<OurServices />} />
-              <Route path="services/:title" element={<ServiceDetails />} />
-              <Route path="blogs" element={<Blogs />} />
-              <Route path="blogs/:title" element={<BlogDetails />} />
-              <Route path="contact-us" element={<ContactUs />} />
-            </Route>
+    <div className="bg-[#f1f1f1] text-[#111111] dark:bg-secondary dark:text-white">
+      <BrowserRouter>
+        <ScrollToTopButton />
+        <ScrollToTop />
+        <SpinnerContextProvider>
+          <ThemeContextProvider>
+            <Suspense fallback={<LoadingSpinner />}>
+              <Routes>
+                <Route path="/" element={<MainLayout />}>
+                  <Route index element={<Home />} />
+                  <Route path="*" element={<Navigate to="/" />} />
+                  <Route path="about-us" element={<AboutUs />} />
+                  <Route path="services" element={<OurServices />} />
+                  <Route path="services/:title" element={<ServiceDetails />} />
+                  <Route path="blogs" element={<Blogs />} />
+                  <Route path="blogs/:title" element={<BlogDetails />} />
+                  <Route path="contact-us" element={<ContactUs />} />
+                </Route>
 
-            <Route path="/" element={<LandingPageLayout />}>
-              {/* Landing Page */}
-              <Route
-                path="web-development"
-                element={<LandingPage page="web" />}
-              />
-              <Route
-                path="app-development"
-                element={<LandingPage page="app" />}
-              />
-            </Route>
-          </Routes>
-        </Suspense>
-      </SpinnerContextProvider>
-    </BrowserRouter>
+                <Route path="/" element={<LandingPageLayout />}>
+                  {/* Landing Page */}
+                  <Route
+                    path="web-development"
+                    element={<LandingPage page="web" />}
+                  />
+                  <Route
+                    path="app-development"
+                    element={<LandingPage page="app" />}
+                  />
+                </Route>
+              </Routes>
+            </Suspense>
+          </ThemeContextProvider>
+        </SpinnerContextProvider>
+      </BrowserRouter>
+    </div>
   );
 }
 

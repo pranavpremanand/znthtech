@@ -1,5 +1,5 @@
 import React from "react";
-import { logo } from "../../data/constant";
+import { logo, logoDark } from "../../data/constant";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -8,8 +8,9 @@ const LandingFooter = () => {
   return (
     <div className="relative bg-primary mt-[4rem]">
       <div className="wrapper text-white grid justify-center sm:justify-between sm:grid-cols-[30%_auto] gap-5">
-        <div className="bg-white w-full sm:h-[calc(100%+2rem)] relative z-10 px-5 py-[2rem] flex flex-col gap-3 items-center">
-          <img src={logo} className="w-[10rem] object-contain" alt="Logo" />
+        <div className="dark:bg-secondary bg-white w-full sm:h-[calc(100%+2rem)] relative z-10 px-5 py-[2rem] flex flex-col gap-3 items-center">
+          <img src={logo} className="w-[10rem] object-contain dark:hidden block" alt="Logo" />
+          <img src={logoDark} className="w-[10rem] object-contain hidden dark:block" alt="Logo" />
         </div>
         <div className="px-5 pb-[2rem] sm:pb-0 w-full flex flex-col justify-center items-center sm:items-end gap-4">
           <div className="flex gap-4">

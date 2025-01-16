@@ -4,10 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#0462A0",
+        primary: "#0484d3",
+        // primary: "#0462A0",
         secondary: "#061E42",
       },
     },
   },
+  darkMode: "class", // Enable dark mode via class
   plugins: [],
 };
