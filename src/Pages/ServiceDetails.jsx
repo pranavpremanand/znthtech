@@ -31,7 +31,7 @@ const ServiceDetails = () => {
             <img
               src={data.detailsPage.img2}
               alt={data.title}
-              className="rounded-lg aspect-square object-cover"
+              className="rounded-lg aspect-square object-cover object-top"
             />
           </div>
         </div>

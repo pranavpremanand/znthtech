@@ -1,11 +1,73 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useForm } from "react-hook-form";
 import HrLine from "./HrLine";
 import { TiArrowBack } from "react-icons/ti";
 import { ImPhone } from "react-icons/im";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { companyDetails } from "../data/constant";
+import { SpinnerContext } from "./SpinnerContext";
+import toast from "react-hot-toast";
+import axios from "axios";
 
 const ContactForm = () => {
+  const { setLoading } = useContext(SpinnerContext);
+  const navigate = useNavigate();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      fullName: "",
+      email: "",
+      message: "",
+    },
+    mode: "all",
+  });
+
+  const onSubmit = async (values) => {
+    setLoading(true);
+    try {
+      let body =
+        "Full Name : " +
+        values.fullName +
+        "\n" +
+        "Email : " +
+        values.email +
+        "\n" +
+        "Message : " +
+        values.message +
+        "\n";
+
+      const data = {
+        body,
+        name: "ZNTH Tech",
+        subject: "New Enquiry",
+        email: companyDetails.email,
+      };
+
+      const res = await axios.post(
+        "https://send-mail-redirect-boostmysites.vercel.app/send-email",
+        data
+      );
+
+      if (res.data.success) {
+        toast.success(res.data.message);
+        reset();
+        navigate("/thank-you");
+      } else {
+        toast.error(res.data.message);
+        console.log(res.data);
+      }
+    } catch (err) {
+      toast.error("Something went wrong");
+      console.log(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div id="contact" className="wrapper pt-[5rem]">
       <div className="grid md:grid-cols-[55%_auto] gap-7">
@@ -49,36 +111,85 @@ const ContactForm = () => {
             </div>
           </div>
         </div>
-        <form data-aos="fade-up" className="bg-primary p-7 space-y-3">
+        <form
+          data-aos="fade-up"
+          className="bg-primary p-7 space-y-3"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <div>
             <input
               type="text"
-              className="w-full p-2 bg-primary-5 outline-none"
+              className="w-full p-2 outline-none text-secondary"
               placeholder="Full Name*"
+              {...register("fullName", {
+                required: "Full Name is required",
+                validate: (value) => {
+                  if (value.trim() === "") {
+                    return "Full Name is required";
+                  }
+                },
+              })}
             />
+            {errors.fullName && (
+              <small className="text-secondary">
+                {errors.fullName.message}
+              </small>
+            )}
           </div>
           <div>
             <input
               type="email"
-              className="w-full p-2 bg-primary-5 outline-none"
+              className="w-full p-2 outline-none text-secondary"
               placeholder="Email*"
+              {...register("email", {
+                required: "Email is required",
+                pattern: {
+                  value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                  message: "Invalid email address",
+                },
+              })}
             />
+            {errors.email && (
+              <small className="text-secondary">{errors.email.message}</small>
+            )}
           </div>
           <div>
             <input
               type="text"
-              className="w-full p-2 bg-primary-5 outline-none"
+              className="w-full p-2 outline-none text-secondary"
               placeholder="Subject*"
+              {...register("subject", {
+                required: "Subject is required",
+                validate: (value) => {
+                  if (value.trim() === "") {
+                    return "Subject is required";
+                  }
+                },
+              })}
             />
+            {errors.subject && (
+              <small className="text-secondary">{errors.subject.message}</small>
+            )}
           </div>
           <div>
             <textarea
               rows="5"
-              className="w-full p-2 bg-primary-5 outline-none"
+              className="w-full p-2 outline-none text-secondary"
               placeholder="Message*"
+              {...register("message", {
+                required: "Message is required",
+                validate: (value) => {
+                  if (value.trim() === "") {
+                    return "Message is required";
+                  }
+                },
+              })}
             />
+            {errors.message && (
+              <small className="text-secondary">{errors.message.message}</small>
+            )}
           </div>
-          <button type="button" className="secondary-btn w-full">
+          <button type="submit" className="secondary-btn w-full">
             Request A Quote
           </button>
         </form>

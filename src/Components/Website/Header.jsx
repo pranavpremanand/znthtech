@@ -15,7 +15,6 @@ export const websiteLinks = [
   { id: 2, name: "About Us", path: "/about-us" },
   { id: 3, name: "Services", path: "/services" },
   { id: 4, name: "Blogs", path: "/blogs" },
-  //   { id: 5, name: "Contact Us", path: "/contact-us" },
 ];
 
 const Header = () => {
@@ -40,20 +39,36 @@ const Header = () => {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <Link className="w-7 h-7 flex hover:bg-primary transition-all duration-200 justify-center items-center rounded-full border border-white">
+            <Link
+              to={companyDetails.linkedin}
+              target="_blank"
+              className="w-7 h-7 flex hover:bg-primary transition-all duration-200 justify-center items-center rounded-full border border-white"
+            >
               <FaLinkedinIn className="fill-white" size={16} strokeWidth={1} />
             </Link>
-            <Link className="w-7 h-7 flex hover:bg-primary transition-all duration-200 justify-center items-center rounded-full border border-white">
+            <Link
+              to={companyDetails.instagram}
+              target="_blank"
+              className="w-7 h-7 flex hover:bg-primary transition-all duration-200 justify-center items-center rounded-full border border-white"
+            >
               <FaInstagram
                 className="fill-white text-secondary"
                 size={16}
                 strokeWidth={1}
               />
             </Link>
-            <Link className="w-7 h-7 flex hover:bg-primary transition-all duration-200 justify-center items-center rounded-full border border-white">
+            <Link
+              to={companyDetails.facebook}
+              target="_blank"
+              className="w-7 h-7 flex hover:bg-primary transition-all duration-200 justify-center items-center rounded-full border border-white"
+            >
               <FaFacebookF className="fill-white" size={16} strokeWidth={1} />
             </Link>
-            <Link className="w-7 h-7 flex hover:bg-primary transition-all duration-200 justify-center items-center rounded-full border border-white">
+            <Link
+              to={companyDetails.twitter}
+              target="_blank"
+              className="w-7 h-7 flex hover:bg-primary transition-all duration-200 justify-center items-center rounded-full border border-white"
+            >
               <FaXTwitter className="fill-white" size={16} strokeWidth={1} />
             </Link>
           </div>
@@ -123,18 +138,6 @@ const Header = () => {
             </div>
             <ThemeToggleButton />
           </div>
-          {/* <div
-            className="block md:hidden justify-self-end"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <Hamburger
-              color="#000000"
-              size="26"
-              toggled={isOpen}
-              rounded
-              toggle={setIsOpen}
-            />
-          </div> */}
         </div>
       </div>
       <Drawer

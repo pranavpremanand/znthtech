@@ -19,7 +19,7 @@ const BlogItem = ({ item }) => {
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum,
           dolor sit amet consectetur adipisicing elit.
         </h6>
-        <p className="line-clamp-3 text-gray-300">
+        <p className="line-clamp-3 text-400 dark:text-gray-300">
           Boluptatum dolores porro ex laborum officiis magnam deleniti ea velit
           dolore inventore consequuntur voluptas sit doloribus vero? Eos dolorum
           deleniti provident! Ab incidunt quae quod impedit, veritatis ipsum non

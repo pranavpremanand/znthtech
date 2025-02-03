@@ -1,5 +1,5 @@
 import React from "react";
-import { logo, logoDark, services } from "../../data/constant";
+import { companyDetails, logo, logoDark, services } from "../../data/constant";
 import { websiteLinks } from "./Header";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
@@ -10,8 +10,16 @@ const Footer = () => {
     <div className="relative bg-primary mt-[4rem]">
       <div className="wrapper text-white grid lg:grid-cols-[30%_auto] gap-5">
         <div className="bg-white dark:bg-secondary w-full lg:h-[calc(100%+2rem)] relative z-10 px-5 py-[2rem] flex flex-col gap-3 items-center">
-          <img src={logo} className="w-[10rem] object-contain dark:hidden block" alt="Logo" />
-          <img src={logoDark} className="w-[10rem] object-contain hidden dark:block" alt="Logo" />
+          <img
+            src={logo}
+            className="w-[10rem] object-contain dark:hidden block"
+            alt="Logo"
+          />
+          <img
+            src={logoDark}
+            className="w-[10rem] object-contain hidden dark:block"
+            alt="Logo"
+          />
           <p className="dark:text-white text-black max-w-sm">
             Empowering businesses with innovative solutions and unmatched
             expertise to drive growth and success in the digital age.
@@ -49,20 +57,36 @@ const Footer = () => {
             </ul>
           </div>
           <div className="flex gap-4 lg:justify-end">
-            <Link className="w-7 h-7 flex hover:bg-secondary transition-all duration-200 justify-center items-center rounded-full border border-white">
+            <Link
+              to={companyDetails.linkedin}
+              target="_blank"
+              className="w-7 h-7 flex hover:bg-secondary transition-all duration-200 justify-center items-center rounded-full border border-white"
+            >
               <FaLinkedinIn className="fill-white" size={16} strokeWidth={1} />
             </Link>
-            <Link className="w-7 h-7 flex hover:bg-secondary transition-all duration-200 justify-center items-center rounded-full border border-white">
+            <Link
+              to={companyDetails.instagram}
+              target="_blank"
+              className="w-7 h-7 flex hover:bg-secondary transition-all duration-200 justify-center items-center rounded-full border border-white"
+            >
               <FaInstagram
                 className="fill-white text-secondary"
                 size={16}
                 strokeWidth={1}
               />
             </Link>
-            <Link className="w-7 h-7 flex hover:bg-secondary transition-all duration-200 justify-center items-center rounded-full border border-white">
+            <Link
+              to={companyDetails.facebook}
+              target="_blank"
+              className="w-7 h-7 flex hover:bg-secondary transition-all duration-200 justify-center items-center rounded-full border border-white"
+            >
               <FaFacebookF className="fill-white" size={16} strokeWidth={1} />
             </Link>
-            <Link className="w-7 h-7 flex hover:bg-secondary transition-all duration-200 justify-center items-center rounded-full border border-white">
+            <Link
+              to={companyDetails.twitter}
+              target="_blank"
+              className="w-7 h-7 flex hover:bg-secondary transition-all duration-200 justify-center items-center rounded-full border border-white"
+            >
               <FaXTwitter className="fill-white" size={16} strokeWidth={1} />
             </Link>
           </div>

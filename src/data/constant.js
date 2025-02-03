@@ -8,6 +8,7 @@ import { ReactComponent as icon3 } from "../assets/svg/services/App Development.
 import { ReactComponent as icon4 } from "../assets/svg/services/Hybrid App Development.svg";
 import { ReactComponent as icon5 } from "../assets/svg/services/IT consultancy and strategy.svg";
 import { ReactComponent as icon6 } from "../assets/svg/services/IT Infrastructure.svg";
+import { ReactComponent as icon7 } from "../assets/svg/services/Cyber Security.svg";
 
 // app development services icons
 import { ReactComponent as appIcon1 } from "../assets/svg/services/iOS App Development.svg";
@@ -26,11 +27,15 @@ import { AiFillAppstore } from "react-icons/ai";
 export { logo, logoDark };
 
 export const companyDetails = {
-  email: "xyz@example.com",
+  email: "znthtech9@gmai.com",
   phone: "+917972837272",
   phone2: "+918788749838",
   address:
     "Devi Shelter, Cooperative Housing Society, 7, Konark Nagar, Clover Park,  Viman Nagar, Pune, Maharashtra 411014, India",
+  linkedin: "https://www.linkedin.com/company/106278814/admin/dashboard/",
+  twitter: "https://x.com/Znth_Tech",
+  instagram: "https://www.instagram.com/znth_tech_/",
+  facebook: "https://www.facebook.com/profile.php?id=61572128112938",
 };
 
 export const testimonials = [
@@ -812,6 +817,244 @@ export const services = [
           </div>
         </div>
       `,
+    },
+  },
+  {
+    id: 7,
+    title: "Cyber Security",
+    icon: icon7,
+    desc: "Protect your business from cyber threats with ZNTH Tech’s comprehensive cybersecurity services. We offer advanced security solutions to safeguard your data, systems, and networks, ensuring your business remains resilient against evolving cyber risks.",
+    detailsPage: {
+      banner: require("../assets/images/banners/cyber-security.webp"),
+      img1: require("../assets/images/service-details/cyber-security-1.webp"),
+      img2: require("../assets/images/service-details/cyber-security-2.webp"),
+      img3: require("../assets/images/service-details/cyber-security-3.webp"),
+      firstSection: `
+        <div class="space-y-6">
+          <div class="space-y-4">
+            <h2 class="text-xl font-bold">
+              Protecting Your Digital Future with Cutting-Edge Cybersecurity
+              Solutions
+            </h2>
+            <p>
+              At ZNTH Tech, we understand that cybersecurity is not just an IT
+              concern, but a strategic imperative for your business. With
+              growing cyber threats and ever-evolving attack methods, we are
+              here to provide comprehensive, reliable, and tailored
+              cybersecurity solutions that ensure your data, assets, and
+              reputation remain secure.
+            </p>
+            <p>
+              Our expert team is committed to safeguarding your organization
+              against cyber threats while empowering you to operate with
+              confidence in a connected world.
+            </p>
+          </div>
+        </div>`,
+      secondSection: `
+        <div class="py-6">
+          <div class="space-y-6">
+            <h2 class="text-xl font-bold"> Our Cybersecurity Services </h2>
+            <ul class="space-y-5 list-decimal pl-6">
+              <li>
+                <h3 class="font-bold mb-2">Cloud Security</h3>
+                <p>
+                  Your Data in the Cloud Needs Protection Too. As businesses
+                  migrate to cloud environments, securing data and applications
+                  in the cloud has never been more critical. We provide cloud
+                  security solutions to ensure that your cloud infrastructure
+                  remains compliant, protected, and resilient against attacks.
+                </p>
+                <p>
+                  <strong>Key Features:</strong>
+                </p>
+                <ul class="list-disc pl-6">
+                  <li>Cloud Security Architecture Design</li>
+                  <li>Data Loss Prevention (DLP) for Cloud Services</li>
+                  <li>Identity and Access Management (IAM)</li>
+                  <li>Cloud Compliance & Risk Management</li>
+                </ul>
+              </li>
+              <li>
+                <h3 class="font-bold mb-2">Endpoint Protection</h3>
+                <p>
+                  Every Device Is a Gateway—Ensure It's Secure. In a world where
+                  remote work and mobile devices are the norm, ensuring that
+                  every endpoint is protected is crucial. Our endpoint security
+                  solutions defend laptops, desktops, mobile devices, and
+                  servers against malware, ransomware, and other cyber threats.
+                </p>
+                <p>
+                  <strong>Key Features:</strong>
+                </p>
+                <ul class="list-disc pl-6">
+                  <li>Antivirus & Anti-Malware Software</li>
+                  <li>Endpoint Detection & Response (EDR)</li>
+                  <li>Mobile Device Management (MDM)</li>
+                  <li>Data Encryption & Security</li>
+                </ul>
+              </li>
+              <li>
+                <h3 class="font-bold mb-2">Network Security</h3>
+                <p>
+                  Your Network is the Backbone of Your Business—Secure It. We
+                  design and implement robust network security measures to
+                  defend your network from unauthorized access, malware, and
+                  data breaches. From firewalls to intrusion detection systems
+                  (IDS), we offer a full range of solutions to protect the
+                  integrity and privacy of your digital assets.
+                </p>
+                <p>
+                  <strong>Key Features:</strong>
+                </p>
+                <ul class="list-disc pl-6">
+                  <li>
+                    Intrusion Detection & Prevention Systems (IDS/IPS)
+                  </li>
+                  <li>Virtual Private Network (VPN) Solutions</li>
+                  <li>Firewall Management & Optimization</li>
+                  <li>Secure Network Architecture Design</li>
+                </ul>
+              </li>
+              <li>
+                <h3 class="font-bold mb-2">Managed Security Services</h3>
+                <p>
+                  Outsource Your Security to Experts. Stay focused on your core
+                  business while we take care of your cybersecurity needs. Our
+                  managed security services offer continuous monitoring, threat
+                  detection, and incident response, 24/7. We act as an extension
+                  of your team, providing proactive defense to prevent cyber
+                  threats before they impact your business.
+                </p>
+                <p>
+                  <strong>Key Features:</strong>
+                </p>
+                <ul class="list-disc pl-6">
+                  <li>24/7 Network Monitoring & Threat Detection</li>
+                  <li>Vulnerability Scanning & Risk Assessment</li>
+                  <li>Incident Response & Forensics</li>
+                  <li>Security Information & Event Management (SIEM)</li>
+                </ul>
+              </li>
+              <li>
+                <h3 class="font-bold mb-2">
+                  Risk & Compliance Assessment
+                </h3>
+                <p>
+                  Meet Industry Standards with Confidence. Staying compliant
+                  with industry regulations and standards is critical to
+                  avoiding penalties and maintaining trust. Our risk and
+                  compliance services help you navigate complex frameworks such
+                  as GDPR, HIPAA, PCI-DSS, and others, ensuring your
+                  organization adheres to necessary guidelines while mitigating
+                  risks.
+                </p>
+                <p>
+                  <strong>Key Features:</strong>
+                </p>
+                <ul class="list-disc pl-6">
+                  <li>Comprehensive Security Audits</li>
+                  <li>Regulatory Compliance Gap Analysis</li>
+                  <li>Penetration Testing & Vulnerability Assessments</li>
+                  <li>Risk Management Framework Implementation</li>
+                </ul>
+              </li>
+              <li>
+                <h3 class="font-bold mb-2">
+                  Penetration Testing & Vulnerability Assessments
+                </h3>
+                <p>
+                  Simulate Real Attacks to Strengthen Your Defenses. Our
+                  penetration testing services simulate sophisticated
+                  cyber-attacks to identify and fix vulnerabilities in your
+                  systems before hackers can exploit them. Our team of ethical
+                  hackers uncovers weaknesses and provides actionable insights
+                  to enhance your defenses.
+                </p>
+                <p>
+                  <strong>Key Features:</strong>
+                </p>
+                <ul class="list-disc pl-6">
+                  <li>External & Internal Penetration Testing</li>
+                  <li>Web Application Security Testing</li>
+                  <li>Social Engineering Testing</li>
+                  <li>Detailed Reporting & Remediation Plans</li>
+                </ul>
+              </li>
+              <li>
+                <h3 class="font-bold mb-2">Security Awareness Training</h3>
+                <p>
+                  Empower Your Employees to Be the First Line of Defense. Human
+                  error remains one of the leading causes of cyber breaches. Our
+                  cybersecurity awareness training programs are designed to
+                  educate your employees on the latest threats and best
+                  practices, turning them into active participants in
+                  safeguarding your organization.
+                </p>
+                <p>
+                  <strong>Key Features:</strong>
+                </p>
+                <ul class="list-disc pl-6">
+                  <li>Phishing Simulation & Awareness Campaigns</li>
+                  <li>Customized Training Programs</li>
+                  <li>Security Best Practices & Policy Education</li>
+                  <li>Ongoing Security Culture Development</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>`,
+      thirdSection: `
+        <div class="py-6">
+          
+          <div class="space-y-6">
+            
+            <h2 class="text-xl font-bold"> Why Choose ZNTH Tech? </h2>
+            <ul class="space-y-5 list-decimal pl-6">
+              
+              <li>
+                
+                <h3 class="font-bold mb-2">Expertise You Can Trust</h3>
+                <p>
+                  
+                  With years of experience and a team of certified cybersecurity
+                  professionals, ZNTH Tech offers top-tier solutions backed by
+                  industry-leading best practices.
+                </p>
+              </li>
+              <li>
+                
+                <h3 class="font-bold mb-2">Tailored Solutions</h3>
+                <p>
+                  
+                  We understand that every business is unique, which is why we
+                  offer customizable cybersecurity solutions that meet your
+                  specific needs and budget.
+                </p>
+              </li>
+              <li>
+                
+                <h3 class="font-bold mb-2">Proactive Defense</h3>
+                <p>
+                  
+                  Our approach is not reactive; we are always one step ahead in
+                  identifying and mitigating threats, ensuring your business
+                  remains secure from evolving risks.
+                </p>
+              </li>
+              <li>
+                
+                <h3 class="font-bold mb-2">24/7 Support</h3>
+                <p>
+                  
+                  Cyber threats don’t follow business hours, and neither do we.
+                  Our team is available around the clock to assist you in
+                  managing and responding to security incidents.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>`,
     },
   },
 ];
