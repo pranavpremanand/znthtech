@@ -44,7 +44,7 @@ const ContactForm = () => {
         body,
         name: "ZNTH Tech",
         subject: "New Enquiry",
-        email: companyDetails.email,
+        to: companyDetails.email,
       };
 
       const res = await axios.post(
