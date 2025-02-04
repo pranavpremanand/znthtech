@@ -130,7 +130,7 @@ const AboutUs = () => {
               <img
                 src={team1}
                 alt="CEO"
-                className="w-full rounded-xl object-cover h-full"
+                className="w-full rounded-xl object-cover h-full aspect-[3/4]"
               />
             </div>
             <div className="flex flex-col gap-3">
@@ -166,7 +166,7 @@ const AboutUs = () => {
               <img
                 src={team2}
                 alt="Co-Founder"
-                className="w-full rounded-xl object-cover h-full"
+                className="w-full rounded-xl object-cover h-full aspect-[3/4]"
               />
             </div>
           </div>
