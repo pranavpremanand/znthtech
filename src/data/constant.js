@@ -27,7 +27,7 @@ import { AiFillAppstore } from "react-icons/ai";
 export { logo, logoDark };
 
 export const companyDetails = {
-  email: "znthtech9@gmai.com",
+  email: "znthtech9@gmail.com",
   phone: "+917972837272",
   phone2: "+918788749838",
   address:
