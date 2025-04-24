@@ -58,11 +58,9 @@ const ContactForm = () => {
         navigate("/thank-you");
       } else {
         toast.error(res.data.message);
-        console.log(res.data);
       }
     } catch (err) {
       toast.error("Something went wrong");
-      console.log(err);
     } finally {
       setLoading(false);
     }

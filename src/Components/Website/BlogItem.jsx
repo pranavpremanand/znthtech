@@ -5,26 +5,20 @@ import { Link } from "react-router-dom";
 const BlogItem = ({ item }) => {
   return (
     <Link
-      to="/blogs/1"
-      key={item}
-      className="keen-slider__slide space-y-2 border border-black/20 group"
+      to={`/blogs/${item.id}`}
+      className="keen-slider__slide space-y-2 border dark:border-white/20 border-black/20 group"
     >
       <img
-        src={item}
-        alt=""
-        className="w-full aspect-video group-hover:brightness-75 duration-200 transition-all"
+        src={item.image}
+        alt={item.heading}
+        className="w-full aspect-video object-cover group-hover:brightness-75 duration-200 transition-all"
       />
       <div className="px-5 py-4 space-y-2">
         <h6 className="text-lg font-semibold text-secondary dark:text-white line-clamp-2 group-hover:text-primary duration-200 transition-all">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum,
-          dolor sit amet consectetur adipisicing elit.
+          {item.heading}
         </h6>
         <p className="line-clamp-3 text-400 dark:text-gray-300">
-          Boluptatum dolores porro ex laborum officiis magnam deleniti ea velit
-          dolore inventore consequuntur voluptas sit doloribus vero? Eos dolorum
-          deleniti provident! Ab incidunt quae quod impedit, veritatis ipsum non
-          sint perferendis magni vel facere cumque voluptas nobis alias
-          doloremque recusandae error quas inventore.
+          {item.html.replace(/<[^>]*>"?/gm, "").substring(0, 350)}...
         </p>
         <Link
           to="/blogs/1"
