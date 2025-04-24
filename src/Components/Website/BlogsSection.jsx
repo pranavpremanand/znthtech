@@ -24,7 +24,7 @@ const BlogsSection = () => {
         },
         "(min-width: 1024px)": {
           slides: {
-            perView: 3,
+            perView: 2,
             spacing: 15,
           },
         },
